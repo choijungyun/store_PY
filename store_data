@@ -2,7 +2,7 @@
 
 def get_store():
     f = open("D:/SMWU_PY/store/1809매출.csv", 'w')
-    file = open('1809추정매출.txt', 'r',  encoding='UTF-16')
+    file = open('1809추정매출.txt', 'r',  encoding='UTF-8')
 
     for line in file:
         field = line.replace("|",",")
