@@ -1,0 +1,13 @@
+#txt파일 csv파일로 바꾸기
+
+def get_store():
+    f = open("D:/SMWU_PY/store/1809매출.csv", 'w')
+    file = open('1809추정매출.txt', 'r',  encoding='UTF-16')
+
+    for line in file:
+        field = line.replace("|",",")
+        #print(field)
+        f.write(field)
+    file.close()
+
+get_store()
